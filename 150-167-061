@@ -1,0 +1,31 @@
+num_liters = float(input("Enter number of liters: "))
+
+liter_price = float(input("Enter price per liter: "))
+
+print("\n")
+
+dollars_per_euro = float(input("Enter dollars per euro: "))
+
+print("\n")
+
+total_euros = (num_liters * liter_price)
+
+num_gallons = (num_liters * (1/3.785))
+
+dollars_per_gallon = ((liter_price * 3.785) * (dollars_per_euro))
+
+total_dollars = (num_liters * liter_price * dollars_per_euro)
+
+print(str(num_liters) + " liters")
+
+print(str(liter_price) + " euros per liter")
+
+print("€" + (str(round(total_euros, 2))) + " TOTAL PRICE IN EUROS")
+
+print("\n")
+
+print(str(round(num_gallons, 12)) + " gallons")
+
+print((str(round(dollars_per_gallon, 2))) + " dollars per gallon")
+
+print("$" + (str(round(total_dollars, 2))) + " TOTAL PRICE IN DOLLARS")
